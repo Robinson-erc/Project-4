@@ -3,7 +3,7 @@ import java.util.Random;
 /**
  * Write a description of class RandomInteger here.
  *
- * @author (Eric Robinson)
+ * @author (your name)
  * @version (a version number or a date)
  */
 public class RandomInteger
