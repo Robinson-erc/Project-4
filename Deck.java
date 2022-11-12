@@ -2,7 +2,7 @@
 /**
  * Write a description of class Deck here.
  *
- * @author (your name)
+ * @author (Eric Robinson)
  * @version (a version number or a date)
  */
 public class Deck

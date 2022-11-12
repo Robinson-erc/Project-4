@@ -2,7 +2,7 @@
 /**
  * Card class for IOOP
  *
- * @author (Prof R)
+ * @author (Eric Robinson)
  * @version (v1.0 11/03/22)
  */
 public class Card implements Comparable {
