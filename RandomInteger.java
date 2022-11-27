@@ -1,47 +1,84 @@
-import java.util.Random;
-
 /**
- * Write a description of class RandomInteger here.
+ * Integer range randon number generator
  *
- * @author (Eric Robinson)
- * @version (a version number or a date)
+ * @author (Prof R)
+ * @version (v1.0 10/16/2022)
  */
 public class RandomInteger
 {
+    // data members
     private int min;
     private int max;
-    private int range; 
-    
+    private int range;
+    /**
+     * Default constructor
+     */
     public RandomInteger()
     {
-        min=0;
-        max=1000;
-        range=max-min+1;
-        
-        
+        // initialise instance variables
+        this.min = 0;
+        this.max = 1;
+        range    = max - min + 1;
     }
-    public RandomInteger(int min, int max){
-        this.min=min;
-        this.max=max;
-        this.range=max-min+1;
-    }
-    public int getMin(int min){
+    /**
+     * Default constructor
+     */
+    public RandomInteger(int min, int max)
+    {
         this.min = min;
-        this.range=max-min+1;
+        this.max = max;
+        range    = max - min + 1;
+    }
+    /**
+     * int GetMin()
+     *
+     * @param none
+     * @return the miniumun number in the inclusive range
+     */
+    public int GetMin() 
+    {
         return min;
     }
-    public int getMax(int max)
+    /**
+     * int GetMax()
+     *
+     * @param none
+     * @return the miniumun number in the inclusive range
+     */
+    public int GetMax() 
     {
-        this.max=max;
-        this.range=max-min+1;
         return max;
     }
-    public int GiveRandom()
+    /**
+     * int SetMin()
+     *
+     * @param none
+     * @return the miniumun number in the inclusive range
+     */
+    public void SetMin(int min) 
     {
-        int random;
-        Random generator = new Random();
-        random = generator.nextInt(max);
-        return random;
+        this.min = min;
+        range    = max - min + 1;
     }
-    
+    /**
+     * void SetMax(int max)
+     *
+     * @param none
+     * @return the miniumun number in the inclusive range
+     */
+    public void SetMax(int max) 
+    {
+        this.max = max;
+        range    = max - min + 1;
+    }
+    /**
+     * int Generate()
+     *
+     * @param none
+     * @return the miniumun number in the inclusive range
+     */
+    int Generate()
+    {
+        return (int)(range * Math.random()) + min; 
+    }
 }

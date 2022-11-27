@@ -8,7 +8,12 @@
 public class TestHighLow
 {
    public static void main(String args[]){
-       HighLow highlow= new HighLow();
-       
-   }
+        HighLow highlow =new HighLow();
+        int count=0;
+        do{
+            highlow.PlayARound();
+            count++;
+        }while(highlow.PlayAgainPrompt()=='Y'); 
+        
+    }
 }
